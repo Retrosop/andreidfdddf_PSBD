@@ -1,0 +1,1 @@
+﻿INSERT INTO zac (name_hsop, name_tovara, data, car) VALUES ('sd', 'sd', '09.09.2020', 'sd')
