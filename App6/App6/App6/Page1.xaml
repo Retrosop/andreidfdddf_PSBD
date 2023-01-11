@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="15, 15, 15, 15">
+                <Picker x:Name="blud" SelectedIndexChanged="blud_SelectedIndexChanged"  Margin="10,5,15,2">
+                    <Picker.Items>
+                        <x:String>первое блюдо</x:String>
+                        <x:String>второе блюдо</x:String>
+                        <x:String>салаты</x:String>
+                        <x:String>напитки</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <Label>супы</Label>
+            <StackLayout x:Name="van">
+
+                <StackLayout x:Name="b1" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="borih"></CheckBox>
+                    <Label>борщ</Label>
+                </StackLayout>
+
+                <StackLayout x:Name="b2" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="asa" CheckedChanged="asa_CheckedChanged"></CheckBox>
+                    <Label x:Name="hi">щи</Label>
+                </StackLayout>
+
+            </StackLayout>
+            <Label>горячие</Label>
+        </StackLayout>
+    </ContentPage.Content>
+
+  
+
+
+
+</ContentPage>

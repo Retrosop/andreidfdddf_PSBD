@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.TabbedPage1"
+            Title="Создание персонажа">
+            
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="меню">
+        <StackLayout>
+            <Label>супы</Label>
+            <StackLayout x:Name="van">
+
+                <StackLayout x:Name="b1" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="borih" CheckedChanged = "borih_CheckedChanged"></CheckBox>
+                    <Label x:Name="borih_txt" Padding="1, 5, 1, 1" Margin="1, 5, 1, 1">борщ</Label>
+
+                    <StackLayout Orientation="Horizontal" x:Name="borih_stac" IsVisible ="false">
+                        <Button x:Name="borin_plus" Clicked="borin_plus_Clicked" Text="+"></Button>
+                        <Label x:Name="int_borih" Padding="1, 10, 1, 1" Margin="1, 5, 1, 1">1</Label>
+                        <Button x:Name="borin_minus" Clicked="borin_minus_Clicked" Text="-"></Button>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="b2" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="asa" CheckedChanged="asa_CheckedChanged"></CheckBox>
+                    <Label x:Name="hi" Padding="1, 5, 1, 1" Margin="1, 5, 1, 1">щи</Label>
+
+                    <StackLayout Orientation="Horizontal" x:Name="hi_stac" IsVisible ="false">
+                        <Button x:Name="plus" Clicked="plus_Clicked" Text="+" ScaleX="1" ScaleY="1"></Button>
+                        <Label x:Name="int_hi" Padding="1, 10, 1, 1" Margin="1, 5, 1, 1">1</Label>
+                        <Button x:Name="minus" Clicked="minus_Clicked" Text="-"></Button>
+                    </StackLayout>
+                </StackLayout>
+                
+            
+            </StackLayout>
+            <Label>горячие</Label>
+            <StackLayout>
+                <StackLayout x:Name="b4" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="patato" CheckedChanged="patato_CheckedChanged"></CheckBox>
+                    <Label x:Name="patato_labl" Padding="1, 5, 1, 1" Margin="1, 5, 1, 1">картошка</Label>
+
+
+                    <StackLayout Orientation="Horizontal" x:Name="patato_stac" IsVisible ="false">
+                        <Button x:Name="plus_patato" Clicked="plus_patato_Clicked" Text="+" ScaleX="1" ScaleY="1"></Button>
+                        <Label x:Name="int_patato" Padding="1, 10, 1, 1" Margin="1, 5, 1, 1">1</Label>
+                        <Button x:Name="minus_patato" Clicked="minus_patato_Clicked" Text="-"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <Label>напитки</Label>
+            <StackLayout>
+                <StackLayout x:Name="b5" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="compot" CheckedChanged="compot_CheckedChanged"></CheckBox>
+                    <Label x:Name="compot_labl" Padding="1, 5, 1, 1" Margin="1, 5, 1, 1">компот</Label>
+
+
+                    <StackLayout Orientation="Horizontal" x:Name="compot_stac" IsVisible ="false">
+                        <Button x:Name="plus_compot" Clicked="plus_compot_Clicked" Text="+" ScaleX="1" ScaleY="1"></Button>
+                        <Label x:Name="int_compot" Padding="1, 10, 1, 1" Margin="1, 5, 1, 1">1</Label>
+                        <Button x:Name="minus_compot" Clicked="minus_compot_Clicked" Text="-"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout x:Name="b6" Margin="10, 20, 10, 10" Orientation="Horizontal">
+                    <CheckBox x:Name="cof" CheckedChanged="cof_CheckedChanged"></CheckBox>
+                    <Label x:Name="cof_labl" Padding="1, 5, 1, 1" Margin="1, 5, 1, 1">кофе</Label>
+
+
+                    <StackLayout Orientation="Horizontal" x:Name="cof_stac" IsVisible ="false">
+                        <Button x:Name="plus_cof" Clicked="plus_cof_Clicked" Text="+" ScaleX="1" ScaleY="1"></Button>
+                        <Label x:Name="int_cof" Padding="1, 10, 1, 1" Margin="1, 5, 1, 1">1</Label>
+                        <Button x:Name="minus_cof" Clicked="minus_cof_Clicked" Text="-"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+
+
+        </StackLayout>
+        
+    </ContentPage>
+    <ContentPage Title="заказ" >
+        <StackLayout>
+            <StackLayout x:Name="hi_hi" Orientation="Horizontal">
+                <Label x:Name="bld1"></Label>
+                <Label x:Name="bld1_sum"></Label>
+            </StackLayout>
+            <StackLayout x:Name="bor_bor" Orientation="Horizontal">
+                <Label x:Name="bld2"></Label>
+                <Label x:Name="bld2_sum"></Label>
+            </StackLayout>
+
+            <StackLayout x:Name="patato_patato" Orientation="Horizontal">
+                <Label x:Name="bld3"></Label>
+                <Label x:Name="bld3_sum"></Label>
+            </StackLayout>
+
+            <StackLayout x:Name="cofe_cofe" Orientation="Horizontal">
+                <Label x:Name="bld4"></Label>
+                <Label x:Name="bld4_sum"></Label>
+            </StackLayout>
+            
+            <StackLayout x:Name="compot_compot" Orientation="Horizontal">
+                <Label x:Name="bld5"></Label>
+                <Label x:Name="bld5_sum"></Label>
+            </StackLayout>
+
+        </StackLayout>
+        
+
+           
+    </ContentPage>
+</TabbedPage>

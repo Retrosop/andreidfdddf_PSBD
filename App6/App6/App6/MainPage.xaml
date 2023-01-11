@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.MainPage">
+
+    <StackLayout BackgroundColor="Beige">
+        <Button  x:Name="NewHeroBtn" Text="меню" Clicked="Button_Clicked" Padding="10, 10, 10, 10" Margin="50, 200, 50, 50"/>
+    </StackLayout>
+
+</ContentPage>
